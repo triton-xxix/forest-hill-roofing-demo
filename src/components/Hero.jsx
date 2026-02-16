@@ -72,7 +72,7 @@ const Hero = () => {
           <div className="hidden lg:block relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="/images/hero-roofer.jpg" 
+                src="/images/hero-roof-aerial.jpg" 
                 alt="Professional roofer working on a residential roof"
                 className="w-full h-[500px] object-cover"
               />
