@@ -70,37 +70,24 @@ const Hero = () => {
           
           {/* Hero Image / Visual */}
           <div className="hidden lg:block relative">
-            <div className="relative bg-gradient-to-br from-amber-500/20 to-blue-500/20 rounded-2xl p-8 backdrop-blur-sm border border-white/10">
-              <div className="space-y-6">
-                <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-400">Emergency? Call Now</p>
-                      <p className="text-2xl font-bold">07864 888292</p>
-                    </div>
-                  </div>
-                </div>
-                
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/images/hero-roofer.jpg" 
+                alt="Professional roofer working on a residential roof"
+                className="w-full h-[500px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
+              
+              {/* Overlay Stats */}
+              <div className="absolute bottom-6 left-6 right-6">
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white/10 rounded-xl p-4 text-center backdrop-blur-sm">
-                    <p className="text-3xl font-bold text-amber-400">15+</p>
-                    <p className="text-sm text-gray-400">Years Experience</p>
+                  <div className="bg-white/95 rounded-xl p-4 text-center shadow-lg">
+                    <p className="text-3xl font-bold text-slate-900">15+</p>
+                    <p className="text-sm text-slate-600">Years Experience</p>
                   </div>
-                  <div className="bg-white/10 rounded-xl p-4 text-center backdrop-blur-sm">
-                    <p className="text-3xl font-bold text-amber-400">500+</p>
-                    <p className="text-sm text-gray-400">Happy Customers</p>
-                  </div>
-                </div>
-                
-                <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
-                  <div className="flex items-center space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-amber-400 fill-amber-400" />
-                    ))}
-                    <span className="ml-2 text-sm">Rated 5/5 by our customers</span>
+                  <div className="bg-white/95 rounded-xl p-4 text-center shadow-lg">
+                    <p className="text-3xl font-bold text-slate-900">500+</p>
+                    <p className="text-sm text-slate-600">Happy Customers</p>
                   </div>
                 </div>
               </div>
